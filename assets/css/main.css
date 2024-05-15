@@ -1402,55 +1402,85 @@ section,
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
+
+.row.gy-4 {
+  padding-left: 90px;
+}
 .team .team-member {
-  box-shadow: 0px 2px 15px color-mix(in srgb, var(--default-color), transparent 90%);
   position: relative;
   border-radius: 5px;
-  transition: 0.5s;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
-  height: 100%;
-  perspective: 1000px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s;
+  margin-bottom: 20px;
+  height: 400px;
+  width: 500px;
+}
+.team .swiper-slide {
+  height: auto;
+}
+.team .swiper-container {
+  padding: 20px 0;
 }
 
-@media (max-width: 468px) {
-  .team .team-member {
-    flex-direction: column;
-    justify-content: center !important;
-    align-items: center !important;
-  }
+.team .team-member .member-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.team .team-member .member-front,
+.team .team-member .member-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.team .team-member .member-back {
+  transform: rotateY(180deg);
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.team .team-member.flipped .member-container {
+  transform: rotateY(180deg);
 }
 
 .team .team-member .pic {
   overflow: hidden;
   width: 150px;
+  height: 150px;
   border-radius: 50%;
-  flex-shrink: 0;
-  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .team .team-member .pic img {
+  width: 100%;
+  height: auto;
   transition: ease-in-out 0.3s;
-}
-
-.team .team-member:hover {
-  transform: translateY(-10px);
-}
-
-.team .team-member .member-info {
-  padding-left: 30px;
-}
-
-@media (max-width: 468px) {
-  .team .team-member .member-info {
-    padding: 30px 0 0 0;
-    text-align: center;
-  }
 }
 
 .team .team-member h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
+  color: #37517e;
 }
 
 .team .team-member span {
@@ -1461,102 +1491,39 @@ section,
   font-weight: 500;
 }
 
-.team .team-member span::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 1px;
-  background: color-mix(in srgb, var(--default-color), transparent 85%);
-  bottom: 0;
-  left: 0;
-}
-
-@media (max-width: 468px) {
-  .team .team-member span::after {
-    left: calc(50% - 25px);
-  }
-}
-
 .team .team-member p {
   margin: 10px 0 0 0;
   font-size: 14px;
 }
 
 .team .team-member .social {
-  margin-top: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  width: 100%;
-}
-
-@media (max-width: 468px) {
-  .team .team-member .social {
-    justify-content: center;
-  }
+  margin-top: 15px;
 }
 
 .team .team-member .social a {
-  background: color-mix(in srgb, var(--default-color), transparent 94%);
-  transition: ease-in-out 0.3s;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50px;
-  width: 36px;
-  height: 36px;
-}
-
-.team .team-member .social a i {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  font-size: 16px;
-  margin: 0 2px;
+  width: 40px;
+  height: 40px;
+  background-color: #e9ecef;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: background-color 0.3s;
 }
 
 .team .team-member .social a:hover {
-  background: var(--accent-color);
+  background-color: #ced4da;
 }
 
-.team .team-member .social a:hover i {
-  color: var(--contrast-color);
+.team .team-member:hover {
+  transform: translateY(-10px);
 }
 
-.team .team-member .social a+a {
-  margin-left: 8px;
-}
-
-.team-member-front,
-.team-member-back {
-  backface-visibility: hidden;
-  transition: transform 0.6s;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.team-member-front {
-  transform: rotateY(0deg);
-}
-
-.team-member-back {
-  transform: rotateY(180deg);
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  padding: 20px;
-  text-align: center;
-}
-
-.team-member.flipped .team-member-front {
-  transform: rotateY(180deg);
-}
-
-.team-member.flipped .team-member-back {
-  transform: rotateY(0deg);
-}
-
+.team .team-member .social i {
+  font-size: 18px;
+  color: #495057;
+} 
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
