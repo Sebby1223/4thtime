@@ -71,6 +71,16 @@
   }
 
   /**
+   * Team buttons
+   */
+  const teamMembers = document.querySelectorAll('.team-member');
+
+  teamMembers.forEach(member => {
+    member.addEventListener('click', () => {
+      member.classList.toggle('flipped');
+    });
+  });
+  /**
    * Scroll top button
    */
   let scrollTop = document.querySelector('.scroll-top');
