@@ -1406,7 +1406,7 @@ section,
 # Team Section
 --------------------------------------------------------------*/
 
-.row.gy-4 {
+.team .row.gy-4 {
   padding-left: 90px;
 }
 .team .team-member {
