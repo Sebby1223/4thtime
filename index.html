@@ -830,7 +830,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Please Contact Us If You Need Any Assistance!</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -868,37 +868,36 @@
           </div>
 
           <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="https://api.web3forms.com/submit" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
-
                 <div class="col-md-6">
                   <label for="name-field" class="pb-2">Your Name</label>
                   <input type="text" name="name" id="name-field" class="form-control" required="">
                 </div>
-
+          
                 <div class="col-md-6">
                   <label for="email-field" class="pb-2">Your Email</label>
                   <input type="email" class="form-control" name="email" id="email-field" required="">
                 </div>
-
+          
                 <div class="col-md-12">
                   <label for="subject-field" class="pb-2">Subject</label>
                   <input type="text" class="form-control" name="subject" id="subject-field" required="">
                 </div>
-
+          
                 <div class="col-md-12">
                   <label for="message-field" class="pb-2">Message</label>
                   <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
                 </div>
-
+          
+                <input type="hidden" name="access_key" value="7bcba816-4c71-40da-8e9c-370e5a3c6600">
+          
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
-
                   <button type="submit">Send Message</button>
                 </div>
-
               </div>
             </form>
           </div><!-- End Contact Form -->
@@ -917,13 +916,13 @@
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-            <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <h4>Join Our Updates!</h4>
+            <p>Subscribe so you can get daily updates from McFatter!</p>
+            <form action="https://api.web3forms.com/submit" method="POST">
               <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
               <div class="loading">Loading</div>
               <div class="error-message"></div>
-              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+              <div class="sent-message">Sent to your Email!</div>
             </form>
           </div>
         </div>
