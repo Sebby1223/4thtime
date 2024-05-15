@@ -2059,6 +2059,12 @@ section,
   margin-bottom: 20px;
 }
 
+.service-details .services-list .new{
+  padding: 10px 30px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  margin-bottom: 20px;
+}
+
 .service-details .services-list a {
   display: block;
   line-height: 1;
@@ -2115,9 +2121,3 @@ section,
   color: var(--accent-color);
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
