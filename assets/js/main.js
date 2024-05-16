@@ -66,7 +66,7 @@
    * Team buttons
    */
   document.addEventListener('DOMContentLoaded', function() {
-    const teamMembers = document.querySelectorAll('.team-member');
+    const teamMembers = document.querySelectorAll('.teacher-member');
     
     teamMembers.forEach(member => {
       member.addEventListener('click', () => {

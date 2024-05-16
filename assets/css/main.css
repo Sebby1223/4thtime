@@ -1425,6 +1425,7 @@ section,
   padding: 60px 40px;
   height: 100%;
   border-radius: 5px;
+  transition: transform 0.3s ease
 }
 
 .pricing h3 {
@@ -1531,6 +1532,16 @@ section,
   }
 }
 
+.pricing-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-top-color: var(--accent-color);
+}
+
+.pricing-item:hover .buy-btn {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
