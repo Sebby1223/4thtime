@@ -1288,17 +1288,15 @@ section,
   bottom: 0;
 }
 
+
 /*--------------------------------------------------------------
-# Team Section
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Team Section
+# Teachers Section
 --------------------------------------------------------------*/
 
-.team .row.gy-4 {
+.teachers .row.gy-4 {
   padding-left: 90px;
 }
-.team .team-member {
+.teachers .teacher-member {
   position: relative;
   border-radius: 5px;
   background: #fff;
@@ -1314,14 +1312,14 @@ section,
   height: 400px;
   width: 500px;
 }
-.team .swiper-slide {
+.teachers .swiper-slide {
   height: auto;
 }
-.team .swiper-container {
+.teachers .swiper-container {
   padding: 20px 0;
 }
 
-.team .team-member .member-container {
+.teachers .teacher-member .member-container {
   position: relative;
   width: 100%;
   height: 100%;
@@ -1329,8 +1327,8 @@ section,
   transform-style: preserve-3d;
 }
 
-.team .team-member .member-front,
-.team .team-member .member-back {
+.teachers .teacher-member .member-front,
+.teachers .teacher-member .member-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1341,17 +1339,17 @@ section,
   justify-content: center;
 }
 
-.team .team-member .member-back {
+.teachers .teacher-member .member-back {
   transform: rotateY(180deg);
   background-color: #f8f9fa;
   padding: 20px;
 }
 
-.team .team-member.flipped .member-container {
+.teachers .teacher-member.flipped .member-container {
   transform: rotateY(180deg);
 }
 
-.team .team-member .pic {
+.teachers .teacher-member .pic {
   overflow: hidden;
   width: 150px;
   height: 150px;
@@ -1359,20 +1357,20 @@ section,
   margin-bottom: 20px;
 }
 
-.team .team-member .pic img {
+.teachers .teacher-member .pic img {
   width: 100%;
   height: auto;
   transition: ease-in-out 0.3s;
 }
 
-.team .team-member h4 {
+.teachers .teacher-member h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
   color: #37517e;
 }
 
-.team .team-member span {
+.teachers .teacher-member span {
   display: block;
   font-size: 15px;
   padding-bottom: 10px;
@@ -1380,16 +1378,16 @@ section,
   font-weight: 500;
 }
 
-.team .team-member p {
+.teachers .teacher-member p {
   margin: 10px 0 0 0;
   font-size: 14px;
 }
 
-.team .team-member .social {
+.teachers .teacher-member .social {
   margin-top: 15px;
 }
 
-.team .team-member .social a {
+.teachers .teacher-member .social a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1401,15 +1399,15 @@ section,
   transition: background-color 0.3s;
 }
 
-.team .team-member .social a:hover {
+.teachers .teacher-member .social a:hover {
   background-color: #ced4da;
 }
 
-.team .team-member:hover {
+.teachers .teacher-member:hover {
   transform: translateY(-10px);
 }
 
-.team .team-member .social i {
+.teachers .teacher-member .social i {
   font-size: 18px;
   color: #495057;
 } 
@@ -1940,21 +1938,21 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Service Details Section
+# Program Details Section
 --------------------------------------------------------------*/
-.service-details .services-list {
+.program-details .program-list {
   padding: 10px 30px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   margin-bottom: 20px;
 }
 
-.service-details .services-list .new{
+.program-details .program-list .new{
   padding: 10px 30px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   margin-bottom: 20px;
 }
 
-.service-details .services-list a {
+.program-details .program-list a {
   display: block;
   line-height: 1;
   padding: 8px 0 8px 15px;
@@ -1964,47 +1962,47 @@ section,
   transition: 0.3s;
 }
 
-.service-details .services-list a.active {
+.program-details .program-list a.active {
   color: var(--heading-color);
   font-weight: 700;
   border-color: var(--accent-color);
 }
 
-.service-details .services-list a:hover {
+.program-details .program-list a:hover {
   border-color: var(--accent-color);
 }
 
-.service-details .services-img {
+.program-details .services-img {
   margin-bottom: 20px;
 }
 
-.service-details h3 {
+.program-details h3 {
   font-size: 26px;
   font-weight: 700;
 }
 
-.service-details h4 {
+.program-details h4 {
   font-size: 20px;
   font-weight: 700;
 }
 
-.service-details p {
+.program-details p {
   font-size: 15px;
 }
 
-.service-details ul {
+.program-details ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.service-details ul li {
+.program-details ul li {
   padding: 5px 0;
   display: flex;
   align-items: center;
 }
 
-.service-details ul i {
+.program-details ul i {
   font-size: 20px;
   margin-right: 8px;
   color: var(--accent-color);
