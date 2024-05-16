@@ -832,9 +832,9 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Home Section
 --------------------------------------------------------------*/
-.hero {
+.home {
   --background-color: #37517e;
   --default-color: #ffffff;
   --heading-color: #ffffff;
@@ -847,14 +847,14 @@ section,
   align-items: center;
 }
 
-.hero h1 {
+.home h1 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
 }
 
-.hero p {
+.home p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   margin: 5px 0 30px 0;
   font-size: 22px;
@@ -862,7 +862,7 @@ section,
   font-weight: 600;
 }
 
-.hero .btn-get-started {
+.home .btn-get-started {
   color: var(--contrast-color);
   background: var(--accent-color);
   font-family: var(--heading-font);
@@ -875,12 +875,12 @@ section,
   transition: 0.5s;
 }
 
-.hero .btn-get-started:hover {
+.home .btn-get-started:hover {
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
 
-.hero .btn-watch-video {
+.home .btn-watch-video {
   font-size: 16px;
   transition: 0.5s;
   margin-left: 25px;
@@ -888,7 +888,7 @@ section,
   font-weight: 600;
 }
 
-.hero .btn-watch-video i {
+.home .btn-watch-video i {
   color: var(--contrast-color);
   font-size: 32px;
   transition: 0.3s;
@@ -896,32 +896,32 @@ section,
   margin-right: 8px;
 }
 
-.hero .btn-watch-video:hover {
+.home .btn-watch-video:hover {
   color: var(--accent-color);
 }
 
-.hero .btn-watch-video:hover i {
+.home .btn-watch-video:hover i {
   color: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
 
-.hero .animated {
+.home .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
 @media (max-width: 640px) {
-  .hero h1 {
+  .home h1 {
     font-size: 28px;
     line-height: 36px;
   }
 
-  .hero p {
+  .home p {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
 
-  .hero .btn-get-started,
-  .hero .btn-watch-video {
+  .home .btn-get-started,
+  .home .btn-watch-video {
     font-size: 13px;
   }
 }
@@ -937,27 +937,27 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Clients Section
+# Clubs Section
 --------------------------------------------------------------*/
-.clients {
+.clubs {
   --background-color: color-mix(in srgb, var(--heading-color), transparent 95%);
   padding: 12px 0;
 }
 
-.clients .swiper {
+.clubs .swiper {
   padding: 10px 0;
 }
 
-.clients .swiper-wrapper {
+.clubs .swiper-wrapper {
   height: auto;
 }
 
-.clients .swiper-slide img {
+.clubs .swiper-slide img {
   transition: 0.3s;
   padding: 0 10px;
 }
 
-.clients .swiper-slide img:hover {
+.clubs .swiper-slide img:hover {
   transform: scale(1.1);
 }
 
@@ -1012,151 +1012,40 @@ section,
   transform: translate(5px, 0);
 }
 
-/*--------------------------------------------------------------
-# Why Us Section
---------------------------------------------------------------*/
-.why-us {
-  --background-color: color-mix(in srgb, var(--heading-color), transparent 95%);
-  padding: 30px 0;
-}
-
-.why-us .content h3 {
-  font-weight: 400;
-  font-size: 34px;
-}
-
-.why-us .content p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-}
-
-.why-us .faq-container .faq-item {
-  position: relative;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0px 5px 25px 0px color-mix(in srgb, var(--default-color), transparent 90%);
-  background-color: var(--contrast-color);
-  overflow: hidden;
-}
-
-.why-us .faq-container .faq-item:last-child {
-  margin-bottom: 0;
-}
-
-.why-us .faq-container .faq-item h3 {
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  margin: 0 30px 0 0;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.why-us .faq-container .faq-item h3 span {
-  color: var(--accent-color);
-  padding-right: 5px;
-  font-weight: 600;
-}
-
-.why-us .faq-container .faq-item h3:hover {
-  color: var(--accent-color);
-}
-
-.why-us .faq-container .faq-item .faq-content {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: 0.3s ease-in-out;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.why-us .faq-container .faq-item .faq-content p {
-  margin-bottom: 0;
-  overflow: hidden;
-}
-
-.why-us .faq-container .faq-item .faq-icon {
-  position: absolute;
-  top: 22px;
-  left: 20px;
-  font-size: 22px;
-  line-height: 0;
-  transition: 0.3s;
-  color: var(--accent-color);
-}
-
-.why-us .faq-container .faq-item .faq-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 16px;
-  line-height: 0;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.why-us .faq-container .faq-item .faq-toggle:hover {
-  color: var(--accent-color);
-}
-
-.why-us .faq-container .faq-active h3 {
-  color: var(--accent-color);
-}
-
-.why-us .faq-container .faq-active .faq-content {
-  grid-template-rows: 1fr;
-  visibility: visible;
-  opacity: 1;
-  padding-top: 10px;
-}
-
-.why-us .faq-container .faq-active .faq-toggle {
-  transform: rotate(90deg);
-  color: var(--accent-color);
-}
-
-.why-us .why-us-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.why-us .why-us-img img {
-  max-height: 70%;
-}
 
 /*--------------------------------------------------------------
-# Skills Section
+# diversity Section
 --------------------------------------------------------------*/
-.skills .content h3 {
+.diversity .content h3 {
   font-size: 2rem;
   font-weight: 700;
 }
 
-.skills .content p {
+.diversity .content p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
-.skills .content p:last-child {
+.diversity .content p:last-child {
   margin-bottom: 0;
 }
 
-.skills .content ul {
+.diversity .content ul {
   list-style: none;
   padding: 0;
 }
 
-.skills .content ul li {
+.diversity .content ul li {
   padding-bottom: 10px;
 }
 
-.skills .progress {
+.diversity .progress {
   height: 60px;
   display: block;
   background: none;
   border-radius: 0;
 }
 
-.skills .progress .skill {
+.diversity .progress .skill {
   color: var(--default-color);
   padding: 0;
   margin: 0 0 6px 0;
@@ -1166,17 +1055,17 @@ section,
   font-family: var(--heading-font);
 }
 
-.skills .progress .skill .val {
+.diversity .progress .skill .val {
   float: right;
   font-style: normal;
 }
 
-.skills .progress-bar-wrap {
+.diversity .progress-bar-wrap {
   background: color-mix(in srgb, var(--heading-color), transparent 90%);
   height: 10px;
 }
 
-.skills .progress-bar {
+.diversity .progress-bar {
   width: 1px;
   height: 10px;
   transition: 0.9s;
@@ -1184,13 +1073,13 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Services Section
+# Programs Section
 --------------------------------------------------------------*/
-.services {
+.programs {
   --background-color: color-mix(in srgb, var(--heading-color), transparent 95%);
 }
 
-.services .service-item {
+.programs .service-item {
   box-shadow: 0px 5px 90px 0px color-mix(in srgb, var(--default-color), transparent 90%);
   padding: 50px 30px;
   transition: all ease-in-out 0.4s;
@@ -1198,38 +1087,38 @@ section,
   height: 100%;
 }
 
-.services .service-item .icon {
+.programs .service-item .icon {
   margin-bottom: 10px;
 }
 
-.services .service-item .icon i {
+.programs .service-item .icon i {
   color: var(--accent-color);
   font-size: 36px;
   transition: 0.3s;
 }
 
-.services .service-item h4 {
+.programs .service-item h4 {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 20px;
 }
 
-.services .service-item h4 a {
+.programs .service-item h4 a {
   color: var(--heading-color);
   transition: ease-in-out 0.3s;
 }
 
-.services .service-item p {
+.programs .service-item p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.services .service-item:hover {
+.programs .service-item:hover {
   transform: translateY(-10px);
 }
 
-.services .service-item:hover h4 a {
+.programs .service-item:hover h4 a {
   color: var(--accent-color);
 }
 
