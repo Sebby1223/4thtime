@@ -1559,9 +1559,8 @@ section,
 }
 
 .counselors .counselors-item .counselors-img {
-  width: 120px;
+  width: 300px;
   border-radius: 50%;
-  border: 4px solid var(--background-color);
   margin: 0 auto;
 }
 
